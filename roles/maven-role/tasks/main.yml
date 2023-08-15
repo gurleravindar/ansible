@@ -1,0 +1,5 @@
+---
+- name: installing maven
+  yum: name=maven state=present
+- name: restart maven
+  service: name=maven state=restarted

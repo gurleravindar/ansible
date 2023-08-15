@@ -1,4 +1,5 @@
-- name: Installing httpd in host server
-    yum: name=httpd state=present
-- name: restart httpd server
-    service: name=httpd state=restarted
+---
+- name: installing httpd
+  yum: name=httpd state=present
+- name: restart httpd
+  service: name=httpd state=restarted
